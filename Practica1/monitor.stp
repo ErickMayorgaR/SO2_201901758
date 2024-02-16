@@ -1,29 +1,29 @@
 #!/usr/bin/stap
 
-global pid1, pid2
 
 probe begin {
     printf("Iniciando monitoreo de llamadas al sistema para procesos hijos...\n")
 }
 
 probe syscall.read {
-    if (pid() == pid1 || pid() == pid2) {
-        printf("%s(%d) %s\n", execname(), pid(), name)
+    if (pid() == $1 || pid() == $2) {
+        hora_actual = gettimeofday_s();
+        printf("%s(%d) %s %s  \n", execname(), pid(), name, ctime(hora_actual))
     }
 }
 
 probe syscall.write {
-    if (pid() == pid1 || pid() == pid2) {
-        printf("%s(%d) %s\n", execname(), pid(), name)
+    if (pid() == $1 || pid() == $2) {
+        hora_actual = gettimeofday_s();
+        printf("%s(%d) %s %s \n", execname(), pid(), name, ctime(hora_actual))
     }
 }
 
-probe syscall.seek {
-    if (pid() == pid1 || pid() == pid2) {
-        printf("%s(%d) %s\n", execname(), pid(), name)
+probe syscall.lseek {
+    hora_actual = gettimeofday_s();
+    if (pid() == $1 || pid() == $2) {
+        printf("%s(%d) %s  %s \n", execname(), pid(), name,ctime(hora_actual))
     }
 }
 
-probe end {
-    printf("Fin del monitoreo de llamadas al sistema.\n")
-}
+

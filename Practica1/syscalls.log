@@ -1,0 +1,7 @@
+Iniciando monitoreo de llamadas al sistema para procesos hijos...
+child.bin(65031) lseek  Wed Feb 21 18:29:58 2024 
+child.bin(65030) lseek  Wed Feb 21 18:29:58 2024 
+child.bin(65031) write Wed Feb 21 18:29:58 2024 
+child.bin(65030) write Wed Feb 21 18:29:58 2024 
+child.bin(65030) write Wed Feb 21 18:29:58 2024 
+child.bin(65031) write Wed Feb 21 18:29:58 2024 
