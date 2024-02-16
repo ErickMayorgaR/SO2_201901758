@@ -1,0 +1,29 @@
+#!/usr/bin/stap
+
+global pid1, pid2
+
+probe begin {
+    printf("Iniciando monitoreo de llamadas al sistema para procesos hijos...\n")
+}
+
+probe syscall.read {
+    if (pid() == pid1 || pid() == pid2) {
+        printf("%s(%d) %s\n", execname(), pid(), name)
+    }
+}
+
+probe syscall.write {
+    if (pid() == pid1 || pid() == pid2) {
+        printf("%s(%d) %s\n", execname(), pid(), name)
+    }
+}
+
+probe syscall.seek {
+    if (pid() == pid1 || pid() == pid2) {
+        printf("%s(%d) %s\n", execname(), pid(), name)
+    }
+}
+
+probe end {
+    printf("Fin del monitoreo de llamadas al sistema.\n")
+}
