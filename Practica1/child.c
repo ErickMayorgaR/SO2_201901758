@@ -46,7 +46,8 @@ int main() {
                     random_string[j] = random_char(); // Generar un caracter aleatorio
                 }
                 random_string[8] = '\0'; 
-                write(fd, random_string, strlen(random_string)); // Escribir en el archivo
+                write(fd, random_string, strlen(random_string)); // Escribir en el archivo  
+                write(fd, "\n", 1);           
                 printf("\n");
                 printf("Proceso hijo escribió: %s", random_string);
                 printf("\n");

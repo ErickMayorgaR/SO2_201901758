@@ -1,9 +1,6 @@
 #!/usr/bin/stap
 
 
-probe begin {
-    printf("Iniciando monitoreo de llamadas al sistema para procesos hijos...\n")
-}
 
 probe syscall.read {
     if (pid() == $1 || pid() == $2) {
