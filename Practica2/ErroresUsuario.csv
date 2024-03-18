@@ -1,0 +1,47 @@
+- Linea #0: Inicio de la carga: 2024-03-19 15:32:02
+- Linea #1: Registro inválido encontrado: no_cuenta,nombre,saldo
+
+- Linea #2: Registro inválido encontrado: 7228,Jorey Pittet,50o00
+
+- Linea #89: Registro inválido encontrado: 6344,Giusto Levison,un millon
+
+- Linea #14: Registro inválido encontrado: 8206,Elianora Wittering,-8
+
+- Linea #40: Usuario duplicado
+- Linea #101: Registro inválido encontrado: 9090,Alayne Oke,-10000
+- Linea #46: Usuario duplicado
+- Linea #53: Registro inválido encontrado: 7748,Merilee Cow,-20
+
+- Linea #20: Registro inválido encontrado: 4572,Tisha Frediani,abc
+
+- Linea #24: Usuario duplicado
+- Linea #0: Fin de la carga: 2024-03-19 15:32:02
+- Linea #0: Total de usuarios cargados por el hilo 0: 28
+- Linea #0: Total de usuarios cargados por el hilo 1: 30
+- Linea #0: Total de usuarios cargados por el hilo 2: 33
+- Linea #0: Inicio de la carga: 2024-03-19 15:54:06
+- Linea #1: Registro inválido encontrado: no_cuenta,nombre,saldo
+
+- Linea #67: Registro inválido encontrado: 9112,Richmound Bril,128.4
+
+- Linea #0: Inicio de la carga: 2024-03-19 15:55:06
+- Linea #1: Registro inválido encontrado: no_cuenta,nombre,saldo
+
+- Linea #2: Registro inválido encontrado: 7228,Jorey Pittet,50o00
+
+- Linea #40: Usuario duplicado
+- Linea #46: Usuario duplicado
+- Linea #89: Registro inválido encontrado: 6344,Giusto Levison,un millon
+
+- Linea #14: Registro inválido encontrado: 8206,Elianora Wittering,-8
+
+- Linea #101: Registro inválido encontrado: 9090,Alayne Oke,-10000
+- Linea #20: Registro inválido encontrado: 4572,Tisha Frediani,abc
+
+- Linea #53: Registro inválido encontrado: 7748,Merilee Cow,-20
+
+- Linea #24: Usuario duplicado
+- Linea #0: Fin de la carga: 2024-03-19 15:55:06
+- Linea #0: Total de usuarios cargados por el hilo 0: 28
+- Linea #0: Total de usuarios cargados por el hilo 1: 30
+- Linea #0: Total de usuarios cargados por el hilo 2: 33
