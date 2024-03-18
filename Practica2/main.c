@@ -320,8 +320,7 @@ void mostrarMenuPrincipal()
     printf("Sistema Bancario\n");
     printf("1. Cargar Masiva Usuarios\n");
     printf("2. Carga Masiva Operaciones\n");
-    printf("3. Generar Reporte de Estado de Cuentas\n");
-    printf("4. Salir\n");
+    printf("3. Salir\n");
     printf("Seleccione una opción: ");
 }
 
@@ -341,9 +340,6 @@ int main()
             cargarOperaciones();
             break;
         case 3:
-            generarReporteEstadoCuentas();
-            break;
-        case 4:
             printf("Saliendo...\n");
             break;
         default:
